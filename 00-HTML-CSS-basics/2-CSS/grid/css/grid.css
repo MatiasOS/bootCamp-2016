@@ -1,0 +1,46 @@
+/*
+Based on
+https://philipwalton.github.io/solved-by-flexbox/demos/grids/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+body {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content:flex-start;
+  flex-wrap:wrap;
+}
+
+  .Grid-col-s {
+      flex: 0 0 100%;
+  }
+
+@media (min-width: 700px){
+  .Grid-col-m{
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Grid-col-12{
+    flex: 0 0 50%;
+  }
+
+  .Grid-col-6{
+    flex: 0 0 50%;
+  }
+
+  .Grid-col-4{
+    flex: 0 0 33%;
+  }
+
+  .Grid-col-3{
+    flex: 0 0 25%;
+  }
+
+  .Grid-col-1{
+    flex: 0 0 10%;
+  }
+}

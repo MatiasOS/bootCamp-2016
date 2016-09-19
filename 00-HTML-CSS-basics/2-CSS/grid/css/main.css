@@ -1,0 +1,23 @@
+* {
+  font-size: 14px;
+  font-family: sans-serif;
+  background-color: #222222;
+  color: rgb(100, 100, 100);
+  text-align: center;
+
+}
+
+.box {
+  color: rgb(200, 200, 200);
+  background-color: #666666;
+  border-radius: 15px;
+
+}
+
+.blue {
+  background-color: #000066;
+}
+
+img{
+  width: 100%;
+}
