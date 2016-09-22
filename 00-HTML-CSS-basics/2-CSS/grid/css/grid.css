@@ -1,46 +1,50 @@
-/*
-Based on
-https://philipwalton.github.io/solved-by-flexbox/demos/grids/
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-*/
 
-body {
-  display: flex;
-  flex: 1;
-  justify-content: space-around;
-  align-items: flex-start;
-  align-content:flex-start;
-  flex-wrap:wrap;
-}
+  .container{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content:space-around;
+    align-content:space-around;
+    flex-direction: row;
+    }
 
-  .Grid-col-s {
-      flex: 0 0 100%;
+  .item {
+    flex-basis: 33%;
   }
 
-@media (min-width: 700px){
-  .Grid-col-m{
-    flex: 0 0 50%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .Grid-col-12{
-    flex: 0 0 50%;
+  .column{
+    flex-direction: column;
+    flex-grow: 0;
+    flex-basis: 100%;
   }
 
-  .Grid-col-6{
-    flex: 0 0 50%;
+
+  @media (min-width: 600px) {
+    .column {
+      flex-basis: 50%;
+    }
+    .column-3{
+      display: flex;
+      flex:1 1 100%;
+      flex-direction:row;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: space-around;
+    }
+    .item{
+      flex-basis: 50%;
+    }
   }
 
-  .Grid-col-4{
-    flex: 0 0 33%;
-  }
 
-  .Grid-col-3{
-    flex: 0 0 25%;
+  @media (min-width: 1000px) {
+    .column {
+      flex-basis: 33%;
+    }
+    .column-2{
+      flex-direction: column;
+    }
+    .column-3{
+      flex-flow: column;;
+    }
   }
-
-  .Grid-col-1{
-    flex: 0 0 10%;
-  }
-}
