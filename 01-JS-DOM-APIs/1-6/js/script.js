@@ -4,9 +4,5 @@ $(document).ready( function() {
     $('.hidden').append('<br><input type="text" name="firstname" class="alias">' );
     $(".alias").focus();
   });
-  console.log("fadeIn finished");
-
-  // Attach functionality
-
-
+  console.log("This log is async");
 });
