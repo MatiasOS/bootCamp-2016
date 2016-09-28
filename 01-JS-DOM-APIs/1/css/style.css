@@ -1,0 +1,14 @@
+*{
+  padding: 3px;
+
+}
+section{
+  margin: 2px;
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.hidden{
+  display: none;
+}
