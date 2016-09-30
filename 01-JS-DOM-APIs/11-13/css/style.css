@@ -1,0 +1,35 @@
+
+.search{
+  margin: 5px;
+  text-align: center;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+article{
+  padding: 2px 2px 6px 2px;
+  width: 32%;
+  margin: 5px 0px;
+  text-align: center;
+  background-color: BurlyWood;
+  border-radius: 10px;
+}
+
+span{
+  margin: 1px 0px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+img{
+  width: 100%;
+  display: block;
+}
