@@ -1,20 +1,19 @@
 class Movie {
   constructor() {
-    this.attributes = [];
-    this.observers = [];
+    this.attributes = new Array();
+    this.observers = new Array();
   }
   play(){
-    console.log('Play');
     let title = this.attributes['title'];
-    this.observers.forEach(function(o){
-      o.notifyPlay(title);
+    this.observers.forEach(function(item, index, array){
+      item.notifyPlay(title);
     });
   }
 
   stop(){
-    console.log('Stop');
-    this.observers.forEach(function(o){
-      o.notifyStop(this.attributes['title']);
+    let title = this.attributes['title'];
+    this.observers.forEach(function(item, index, array){
+      item.notifyStop(title);
     });
   }
   set(key, value){
@@ -35,15 +34,17 @@ class Observer {
   notifyStop(t){
     console.log(t + "stopped");
   };
-  notifyStop(t){
+  notifyPlay(t){
     console.log("Playing " + t);
   };
 };//End Observer
 
-let o1 = new Observer();
-let m1 = new Movie();
-m1.set('title','terminator');
-m1.addObserver(o1);
+{
+  let o1 = new Observer();
+  let m1 = new Movie();
+  m1.set('title','terminator');
+  m1.addObserver(o1);
 
-m1.play();
-m1.stop();
+  m1.play();
+  m1.stop();
+}
