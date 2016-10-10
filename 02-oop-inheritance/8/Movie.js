@@ -46,8 +46,7 @@ var Movie = (function () {
 var MovieObserver = (function () {
     var p = MovieObserver.prototype;
     // Constructor
-    function MovieObserver(name) {
-        this.name = name;
+    function MovieObserver() {
     };
 
     p.notifyPlay = function (msg) {
@@ -60,8 +59,20 @@ var MovieObserver = (function () {
     return MovieObserver;
 } ());
 
+// DownloadableMovie
 
+var DownloadableMovie = (function() {
+  DownloadableMovie.prototype = new Movie();
+  var p = DownloadableMovie.prototype;
 
+  function DownloadableMovie(){
+  };
+
+  p.download = function(){
+    console.log("Downloading movie: " + p.get("title"));
+  }
+  return DownloadableMovie;
+}());
 
 
   var o1 = new MovieObserver();
@@ -72,4 +83,6 @@ var MovieObserver = (function () {
   m1.play();
   m1.stop();
 
-  // DownloadableMovie
+  var d1 = new DownloadableMovie();
+  d1.set("title", "terminator2");
+  d1.download();
