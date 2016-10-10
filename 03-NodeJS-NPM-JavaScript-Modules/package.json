@@ -1,0 +1,8 @@
+{
+  "name": "03-NodeJS-NPM-JavaScript-Modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Matías Oveja Smith",
+  "license": "ISC"
+}
