@@ -6,8 +6,8 @@ class Movie extends Component {
 
   constructor(pros, state){
     super(pros, state);
-    this.handlePlay=this.handlePlay.bind(this);
-    this.handleStop=this.handleStop.bind(this);
+    this.handlePlay = this.handlePlay.bind(this);
+    this.handleStop = this.handleStop.bind(this);
   }
 
   handlePlay(){

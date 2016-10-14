@@ -1,19 +1,19 @@
 var data = [
   {
-    title:"terminator",
-    director:"mike jhon"
+    title:"Terminator",
+    director:"mike"
   },
   {
     title:"Solado argentino solo conocido por Dios",
-    director:"Anonimo"
+    director:"Anónimo"
   },
   {
     title:"Luca",
     director:"Rodrigo Espina"
   },
   {
-    title:"terminator",
-    director:"mike jhon"
+    title:"Terminator 2",
+    director:"Jhon"
   },
   {
     title:"Fangio, viaje a la memoria",

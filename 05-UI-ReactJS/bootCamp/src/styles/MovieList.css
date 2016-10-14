@@ -1,9 +1,7 @@
 .MovieList {
     display: flex;
     flex-direction: row;
-    align-items:center;
-    justify-content: space-between;
-    align-content: space-around;
-    padding: 5px;
     flex-wrap: wrap;
+    padding: 5px;
+
 }
