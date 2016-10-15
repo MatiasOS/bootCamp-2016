@@ -4,7 +4,7 @@ var data = [
     director:"mike"
   },
   {
-    title:"Solado argentino solo conocido por Dios",
+    title:"Solado argentino",
     director:"Anónimo"
   },
   {
